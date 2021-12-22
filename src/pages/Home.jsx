@@ -1,9 +1,9 @@
-import UsersResults from "../component/users/UsersResults"
+import UserResults from "../component/users/UserResults"
 
 function Home() {
   return (
     <div>
-      <UsersResults />
+      <UserResults />
     </div>
   )
 }

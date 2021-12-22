@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Spinner from '../layout/Spinner'
 
-function UsersResults() {
+function UserResults() {
   const [users, setUsers] = useState([])
   const [loading, setLoading] = useState(true)
 
@@ -41,4 +41,4 @@ function UsersResults() {
   
 }
 
-export default UsersResults
+export default UserResults
