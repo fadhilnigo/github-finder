@@ -28,6 +28,10 @@ export const getUserAndRepos = async (login) => {
     github.get(`/users/${login}`),
     github.get(`/users/${login}/repos?${params}`),
   ])
-
-  return { user: user.data, repos: repos.data }
+  .catch(function (error){
+    if (error.response) {
+      window.location = '/notfound'
+    } else {  }
+  })
+  return { user: user.data, repos: repos.data }  
 }
