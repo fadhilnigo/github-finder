@@ -31,7 +31,7 @@ export const getUserAndRepos = async (login) => {
   .catch(function (error){
     if (error.response) {
       window.location = '/notfound'
-    } else {  }
+    }
   })
   return { user: user.data, repos: repos.data }  
 }
